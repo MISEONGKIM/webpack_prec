@@ -1,8 +1,5 @@
 # webpack
 
-생성일: 2022년 11월 26일 오후 4:26
-참조: https://joshua1988.github.io/webpack-guide/webpack/what-is-webpack.html
-
 ### 웹팩이란
 
 모듈 번들러란 웹 애플리케이션을 구성하는 자원(HTML, CSS, Javscript, Images 등)을 **모두 각각의 모듈로 보고 이를 조합해서 병합된 하나의 결과물을 만드는 도구**를 의미
@@ -30,7 +27,7 @@
   - 웹팩을 이용해 여러 개의 파일을 하나로 합치면 위와 같은 브라우저별 HTTP 요청 숫자 제약을 피할 수 있다.
 - 사용하지 않는 코드의 관리
 - Dynamic Loading & Lazy Loading 미지원
-  - **[Require.js](https://requirejs.org/)**와 같은 라이브러리를 쓰지 않으면 동적으로 원하는 순간에 모듈을 로딩하는 것이 불가능 했음.
+  - [Require.js](https://requirejs.org/)와 같은 라이브러리를 쓰지 않으면 동적으로 원하는 순간에 모듈을 로딩하는 것이 불가능 했음.
   - 이젠 웹팩의 Code Splitting([https://webpack.kr/guides/code-splitting/](https://webpack.kr/guides/code-splitting/)) 기능을 이용하여 원하는 모듈을 원하는 타이밍에 로딩할 수 있다.
     - Code Splitting
     ```jsx
@@ -47,7 +44,7 @@
 
 ### Entry
 
-- 웹팩에서 웹 자원을 변환하기 위해 필요한 최초 진입점이자 자바스크립트 파일 경로입니다.
+- 웹팩에서 웹 자원을 변환하기 위해 필요한 최초 진입점이자 자바스크립트 파일 경로
 
 ```jsx
 // webpack.config.js
@@ -179,7 +176,7 @@ module.exports = {
 
 ## 웹팩 개발 툴
 
-### \***\*Webpack Dev Server\*\***
+### Webpack Dev Server
 
 - 개발 과정에 쓰이는 도구
 - 웹팩의 빌드 대상 파일이 변경 되었을 때 매번 웹팩 명령어를 실행하지 않아도 코드만 변경하고 저장하면 웹팩으로 빌드한 후 브라우저를 새로고침 해줌.
