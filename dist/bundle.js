@@ -500,6 +500,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _base_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 
 
+const div = document.querySelector(".container");
+div.innerText = "Webpack loaded!!";
+
 })();
 
 /******/ })()

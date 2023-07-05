@@ -1,8 +1,7 @@
 // webpack.config.js
 // `webpack` command will pick up this config setup by default
 var path = require("path");
-// css파일을 별도로 분리하기 위해 플러그인 추가
-var MiniCssExtractPlugin = require("mini-css-extract-plugin");
+var HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: "none",
@@ -19,5 +18,13 @@ module.exports = {
       }
     ]
   },
-  plugins: [new MiniCssExtractPlugin()]
+  devServer: {
+    port: 9000
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      // index.html 템플릿을 기반으로 빌드 결과물을 추가해줌
+      template: "./index.html"
+    })
+  ]
 };
